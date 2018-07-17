@@ -19,7 +19,9 @@ class DisplayViewController: AsciiViewController {
     @IBOutlet open weak var busyView: UIView!
     @IBOutlet open weak var scrollView: UIScrollView!
     
-    var picSelectMethod: String?
+    var picSelectMethod: PicSelectOptions?
+    var path: String?
+    
     var ref: DatabaseReference!
     
     override func viewDidLoad() {
@@ -29,13 +31,41 @@ class DisplayViewController: AsciiViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        if picSelectMethod! == "homePickImage" {
+        
+        if picSelectMethod! == .pick {
             pickImage()
-            picSelectMethod = "done"
-        } else if picSelectMethod! == "homeTakePicture" {
+            picSelectMethod = .done
+        } else if picSelectMethod! == .take {
             takePicture()
-            picSelectMethod = "done"
+            picSelectMethod = .done
+        } else if picSelectMethod! == .url {
+            if FileManager.default.fileExists(atPath: path!) {
+                let url = URL(fileURLWithPath: path!)
+                do {
+                    let data = try Data(contentsOf: url)
+                    if let image = UIImage(data: data) {
+                        displayImage(image, busyView: busyView)
+                    } else {
+                        alert(title: "Invalid Selction", message: "No Photo Was Selected in Share Extension1", dismissText: "Ok")
+                    }
+                } catch {
+                    alert(title: "Invalid Selction", message: error as? String, dismissText: "Ok")
+                    print(error)
+                }
+            } else {
+                alert(title: "Invalid Selction", message: "No Photo Was Selected in Share Extension2", dismissText: "Ok")
+            }
         }
+            
+//            if let prefs = UserDefaults(suiteName: "group.liamrosenfeld.ImageToAsciiArt") {
+//                if let imageData = prefs.object(forKey: "passedImage") as? Data {
+//                    if let image = UIImage(data: imageData) {
+//                        displayImage(image, busyView: busyView)
+//                    } else {
+//                        print("Image could not be found!")
+//                    }
+//                }
+//            }
     }
 
     
@@ -105,4 +135,12 @@ class DisplayViewController: AsciiViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
+}
+
+
+enum PicSelectOptions {
+    case pick
+    case take
+    case done
+    case url
 }

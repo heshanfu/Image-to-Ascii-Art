@@ -22,10 +22,18 @@
 	<string>1</string>
 	<key>NSExtension</key>
 	<dict>
+		<key>NSExtensionAttributes</key>
+		<dict>
+			<key>NSExtensionActivationRule</key>
+            <dict>
+                <key>NSExtensionActivationSupportsImageWithMaxCount</key>
+                <integer>1</integer>
+            </dict>
+		</dict>
 		<key>NSExtensionMainStoryboard</key>
-		<string>Main</string>
+		<string>MainInterface</string>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.message-payload-provider</string>
+		<string>com.apple.share-services</string>
 	</dict>
 </dict>
 </plist>
