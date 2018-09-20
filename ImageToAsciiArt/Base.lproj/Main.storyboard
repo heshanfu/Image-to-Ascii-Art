@@ -38,7 +38,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uFJ-lH-54l">
-                                <rect key="frame" x="0.0" y="227.5" width="375" height="262.5"/>
+                                <rect key="frame" x="0.0" y="232.5" width="375" height="262.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dj1-jU-tmG" userLabel="Pick Image View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -100,7 +100,7 @@
                                     <constraint firstItem="Dj1-jU-tmG" firstAttribute="leading" secondItem="uFJ-lH-54l" secondAttribute="leading" id="1bs-dr-QB7"/>
                                     <constraint firstAttribute="trailing" secondItem="Dj1-jU-tmG" secondAttribute="trailing" id="28U-13-aT2"/>
                                     <constraint firstAttribute="trailing" secondItem="RJh-GR-AQL" secondAttribute="trailing" id="2eq-1p-9V7"/>
-                                    <constraint firstItem="RJh-GR-AQL" firstAttribute="top" relation="lessThanOrEqual" secondItem="Dj1-jU-tmG" secondAttribute="bottom" constant="70" id="I2E-Fh-rlQ"/>
+                                    <constraint firstItem="RJh-GR-AQL" firstAttribute="top" relation="lessThanOrEqual" secondItem="Dj1-jU-tmG" secondAttribute="bottom" constant="90" id="I2E-Fh-rlQ"/>
                                     <constraint firstAttribute="width" secondItem="uFJ-lH-54l" secondAttribute="height" multiplier="400:280" id="U0o-GU-n59">
                                         <variation key="widthClass=regular" constant="393"/>
                                     </constraint>
@@ -136,7 +136,7 @@
                             <constraint firstItem="9Mi-Fz-mT7" firstAttribute="trailing" secondItem="uFJ-lH-54l" secondAttribute="trailing" id="58Q-sG-fPY"/>
                             <constraint firstItem="9Mi-Fz-mT7" firstAttribute="trailing" secondItem="dFM-kV-GUA" secondAttribute="trailing" constant="35" id="6JQ-0H-ai1"/>
                             <constraint firstItem="dFM-kV-GUA" firstAttribute="centerX" secondItem="9Mi-Fz-mT7" secondAttribute="centerX" id="ZZT-3y-Z3Z"/>
-                            <constraint firstItem="uFJ-lH-54l" firstAttribute="top" secondItem="dFM-kV-GUA" secondAttribute="bottom" constant="20" id="gTL-3e-jAw"/>
+                            <constraint firstItem="uFJ-lH-54l" firstAttribute="top" secondItem="dFM-kV-GUA" secondAttribute="bottom" constant="25" id="gTL-3e-jAw"/>
                             <constraint firstItem="dFM-kV-GUA" firstAttribute="leading" secondItem="9Mi-Fz-mT7" secondAttribute="leading" constant="35" id="jcL-dm-xpd"/>
                             <constraint firstItem="9Mi-Fz-mT7" firstAttribute="trailing" secondItem="uFJ-lH-54l" secondAttribute="trailing" id="nzh-Xv-YJm"/>
                             <constraint firstItem="uFJ-lH-54l" firstAttribute="centerY" secondItem="9Mi-Fz-mT7" secondAttribute="centerY" id="w9p-t9-R7S"/>
@@ -327,7 +327,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bcd-Q1-P5r">
-                                <rect key="frame" x="0.0" y="227.5" width="375" height="262.5"/>
+                                <rect key="frame" x="0.0" y="232.5" width="375" height="262.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send ASCII Art in iMessage!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-kM-XeV">
                                         <rect key="frame" x="81" y="18" width="213" height="21"/>
@@ -414,7 +414,7 @@
                             <constraint firstItem="Bcd-Q1-P5r" firstAttribute="leading" secondItem="mSW-A2-Mhv" secondAttribute="leading" id="atP-e1-gz7"/>
                             <constraint firstItem="Bcd-Q1-P5r" firstAttribute="centerY" secondItem="mSW-A2-Mhv" secondAttribute="centerY" id="fou-Bm-G9K"/>
                             <constraint firstItem="mSW-A2-Mhv" firstAttribute="trailing" secondItem="ZWj-HI-Yyg" secondAttribute="trailing" constant="16" id="nx7-0N-5VM"/>
-                            <constraint firstItem="Bcd-Q1-P5r" firstAttribute="top" secondItem="d8Q-tq-J6w" secondAttribute="bottom" constant="20" id="oJD-ob-YTj"/>
+                            <constraint firstItem="Bcd-Q1-P5r" firstAttribute="top" secondItem="d8Q-tq-J6w" secondAttribute="bottom" constant="25" id="oJD-ob-YTj"/>
                             <constraint firstItem="Bcd-Q1-P5r" firstAttribute="top" secondItem="d8Q-tq-J6w" secondAttribute="bottom" constant="20" id="pei-LT-O8r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mSW-A2-Mhv"/>
