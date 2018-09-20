@@ -373,8 +373,9 @@
                                     <constraint firstItem="a9H-ab-djm" firstAttribute="top" secondItem="eM6-VS-1H7" secondAttribute="bottom" constant="8" id="py1-4f-192"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWj-HI-Yyg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWj-HI-Yyg" customClass="RoundedButton" customModule="ImageToAsciiArt" customModuleProvider="target">
                                 <rect key="frame" x="298" y="596" width="61" height="51"/>
+                                <color key="backgroundColor" name="Light Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="OLf-hv-g18"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61" id="p7C-rc-GkV"/>
@@ -383,6 +384,12 @@
                                 <state key="normal" title="Close">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useCustomRadius" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="customRadius">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="close:" destination="pX9-58-Fot" eventType="touchUpInside" id="UqE-Ts-I1k"/>
                                 </connections>
