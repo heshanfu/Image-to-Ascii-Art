@@ -138,7 +138,6 @@
                             <constraint firstItem="dFM-kV-GUA" firstAttribute="centerX" secondItem="9Mi-Fz-mT7" secondAttribute="centerX" id="ZZT-3y-Z3Z"/>
                             <constraint firstItem="uFJ-lH-54l" firstAttribute="top" secondItem="dFM-kV-GUA" secondAttribute="bottom" constant="25" id="gTL-3e-jAw"/>
                             <constraint firstItem="dFM-kV-GUA" firstAttribute="leading" secondItem="9Mi-Fz-mT7" secondAttribute="leading" constant="35" id="jcL-dm-xpd"/>
-                            <constraint firstItem="9Mi-Fz-mT7" firstAttribute="trailing" secondItem="uFJ-lH-54l" secondAttribute="trailing" id="nzh-Xv-YJm"/>
                             <constraint firstItem="uFJ-lH-54l" firstAttribute="centerY" secondItem="9Mi-Fz-mT7" secondAttribute="centerY" id="w9p-t9-R7S"/>
                             <constraint firstItem="uFJ-lH-54l" firstAttribute="leading" secondItem="9Mi-Fz-mT7" secondAttribute="leading" id="y1b-EB-gvc"/>
                         </constraints>
@@ -330,7 +329,7 @@
                                 <rect key="frame" x="0.0" y="232.5" width="375" height="262.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send ASCII Art in iMessage!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-kM-XeV">
-                                        <rect key="frame" x="81" y="18" width="213" height="21"/>
+                                        <rect key="frame" x="81" y="18" width="213" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -339,19 +338,19 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just enable the extension by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM6-VS-1H7">
-                                        <rect key="frame" x="93" y="44" width="189" height="17"/>
+                                        <rect key="frame" x="93" y="43.5" width="189" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="‹ › with ♥ by Liam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwg-YG-3Ao">
-                                        <rect key="frame" x="119" y="203.5" width="137" height="30.5"/>
+                                        <rect key="frame" x="119" y="204" width="137" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a9H-ab-djm">
-                                        <rect key="frame" x="84" y="69" width="207.5" height="124.5"/>
+                                        <rect key="frame" x="83" y="68.5" width="209" height="125.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="2aJ-EB-l7K"/>
                                             <constraint firstAttribute="width" secondItem="a9H-ab-djm" secondAttribute="height" multiplier="5:3" id="4fY-Ia-Srb"/>
@@ -364,6 +363,7 @@
                                     <constraint firstItem="oYd-kM-XeV" firstAttribute="top" secondItem="Bcd-Q1-P5r" secondAttribute="top" constant="18" id="6id-9Y-eLo"/>
                                     <constraint firstAttribute="width" secondItem="Bcd-Q1-P5r" secondAttribute="height" multiplier="400:280" id="IKJ-da-sc9"/>
                                     <constraint firstItem="a9H-ab-djm" firstAttribute="centerX" secondItem="Bcd-Q1-P5r" secondAttribute="centerX" id="Nqy-Zq-UcK"/>
+                                    <constraint firstAttribute="width" secondItem="Bcd-Q1-P5r" secondAttribute="height" multiplier="384:145" id="T3m-Sr-ISY"/>
                                     <constraint firstItem="a9H-ab-djm" firstAttribute="centerY" secondItem="Bcd-Q1-P5r" secondAttribute="centerY" id="XrN-2Z-piM"/>
                                     <constraint firstItem="oYd-kM-XeV" firstAttribute="centerX" secondItem="Bcd-Q1-P5r" secondAttribute="centerX" id="YKR-TY-wbU"/>
                                     <constraint firstItem="eM6-VS-1H7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oYd-kM-XeV" secondAttribute="bottom" constant="5" id="b8J-2z-odl"/>
@@ -372,6 +372,22 @@
                                     <constraint firstItem="eM6-VS-1H7" firstAttribute="centerX" secondItem="Bcd-Q1-P5r" secondAttribute="centerX" id="pK5-Sz-u5N"/>
                                     <constraint firstItem="a9H-ab-djm" firstAttribute="top" secondItem="eM6-VS-1H7" secondAttribute="bottom" constant="8" id="py1-4f-192"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IKJ-da-sc9"/>
+                                        <exclude reference="T3m-Sr-ISY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="IKJ-da-sc9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="T3m-Sr-ISY"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWj-HI-Yyg" customClass="RoundedButton" customModule="ImageToAsciiArt" customModuleProvider="target">
                                 <rect key="frame" x="298" y="596" width="61" height="51"/>
@@ -404,7 +420,6 @@
                         </subviews>
                         <color key="backgroundColor" name="Dark Blue"/>
                         <constraints>
-                            <constraint firstItem="d8Q-tq-J6w" firstAttribute="top" secondItem="mSW-A2-Mhv" secondAttribute="top" constant="35" id="5jD-gh-UeG"/>
                             <constraint firstItem="ZWj-HI-Yyg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="atP-9J-bci" secondAttribute="leading" constant="20" symbolic="YES" id="5qa-P7-8ND"/>
                             <constraint firstItem="mSW-A2-Mhv" firstAttribute="leading" secondItem="d8Q-tq-J6w" secondAttribute="leading" constant="-35" id="AcF-KD-gtp"/>
                             <constraint firstItem="ZWj-HI-Yyg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mSW-A2-Mhv" secondAttribute="leading" symbolic="YES" id="JTB-PK-Vym"/>
@@ -413,30 +428,29 @@
                             <constraint firstItem="mSW-A2-Mhv" firstAttribute="bottom" secondItem="ZWj-HI-Yyg" secondAttribute="bottom" constant="20" id="Wlv-sC-Ygd"/>
                             <constraint firstItem="Bcd-Q1-P5r" firstAttribute="leading" secondItem="mSW-A2-Mhv" secondAttribute="leading" id="atP-e1-gz7"/>
                             <constraint firstItem="Bcd-Q1-P5r" firstAttribute="centerY" secondItem="mSW-A2-Mhv" secondAttribute="centerY" id="fou-Bm-G9K"/>
+                            <constraint firstItem="d8Q-tq-J6w" firstAttribute="top" secondItem="mSW-A2-Mhv" secondAttribute="top" constant="35" id="mBU-Sl-rWt"/>
                             <constraint firstItem="mSW-A2-Mhv" firstAttribute="trailing" secondItem="ZWj-HI-Yyg" secondAttribute="trailing" constant="16" id="nx7-0N-5VM"/>
                             <constraint firstItem="Bcd-Q1-P5r" firstAttribute="top" secondItem="d8Q-tq-J6w" secondAttribute="bottom" constant="25" id="oJD-ob-YTj"/>
-                            <constraint firstItem="Bcd-Q1-P5r" firstAttribute="top" secondItem="d8Q-tq-J6w" secondAttribute="bottom" constant="20" id="pei-LT-O8r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mSW-A2-Mhv"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="AcF-KD-gtp"/>
                                 <exclude reference="fou-Bm-G9K"/>
                                 <exclude reference="oJD-ob-YTj"/>
-                                <exclude reference="pei-LT-O8r"/>
                                 <exclude reference="5qa-P7-8ND"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
+                                <include reference="AcF-KD-gtp"/>
                                 <include reference="oJD-ob-YTj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="constraints">
-                                <include reference="5jD-gh-UeG"/>
                                 <include reference="Jlq-Ci-uAw"/>
                                 <include reference="fou-Bm-G9K"/>
-                                <include reference="pei-LT-O8r"/>
                                 <include reference="5qa-P7-8ND"/>
                                 <exclude reference="JTB-PK-Vym"/>
                             </mask>
