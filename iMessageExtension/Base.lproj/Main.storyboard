@@ -20,14 +20,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6dw-xi-LWV">
-                                <rect key="frame" x="40" y="-85" width="240" height="410"/>
+                                <rect key="frame" x="40" y="60" width="240" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6dw-xi-LWV" secondAttribute="height" multiplier="2:1" id="PCs-OL-W4S"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="Dark Blue"/>
                         <constraints>
                             <constraint firstItem="6dw-xi-LWV" firstAttribute="centerY" secondItem="s5x-89-QfI" secondAttribute="centerY" id="Mza-46-4bD"/>
                             <constraint firstItem="6dw-xi-LWV" firstAttribute="leading" secondItem="s5x-89-QfI" secondAttribute="leading" constant="40" id="R7u-QA-8zK"/>
-                            <constraint firstItem="6dw-xi-LWV" firstAttribute="centerX" secondItem="s5x-89-QfI" secondAttribute="centerX" id="WR9-jR-3Qp"/>
                             <constraint firstItem="6dw-xi-LWV" firstAttribute="centerX" secondItem="nj4-5e-Bxy" secondAttribute="centerX" id="qaD-cn-YGi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="s5x-89-QfI"/>
