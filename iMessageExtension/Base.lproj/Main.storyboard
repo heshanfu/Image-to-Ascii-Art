@@ -49,17 +49,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-Uj-AqN">
-                                <rect key="frame" x="40" y="50" width="240" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="n0i-Uj-AqN" secondAttribute="height" multiplier="2:1" id="BmY-aN-Ol6"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yei-Px-Gd9">
-                                <rect key="frame" x="40" y="190" width="240" height="30"/>
+                                <rect key="frame" x="40" y="160" width="240" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rj-Lp-zdb" customClass="RoundedButton" customModule="iMessageExtension" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="0.0" width="86" height="30"/>
+                                        <rect key="frame" x="20" y="0.0" width="86" height="40"/>
                                         <color key="backgroundColor" name="Light Blue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="86" id="x5t-yr-Opm"/>
@@ -78,7 +72,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzg-1w-HHV" customClass="RoundedButton" customModule="iMessageExtension" customModuleProvider="target">
-                                        <rect key="frame" x="134" y="0.0" width="86" height="30"/>
+                                        <rect key="frame" x="134" y="0.0" width="86" height="40"/>
                                         <color key="backgroundColor" name="Light Blue"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="86" id="ixq-G7-XoY"/>
@@ -100,18 +94,26 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="9Rj-Lp-zdb" firstAttribute="centerY" secondItem="yei-Px-Gd9" secondAttribute="centerY" id="Am9-ab-voh"/>
+                                    <constraint firstItem="9Rj-Lp-zdb" firstAttribute="height" secondItem="yei-Px-Gd9" secondAttribute="height" id="H8I-9y-QKl"/>
                                     <constraint firstItem="9Rj-Lp-zdb" firstAttribute="leading" secondItem="yei-Px-Gd9" secondAttribute="leading" constant="20" id="HgR-YN-ny1"/>
-                                    <constraint firstAttribute="height" constant="30" id="Mbr-QA-PO3"/>
+                                    <constraint firstAttribute="height" constant="40" id="Mbr-QA-PO3"/>
                                     <constraint firstItem="tzg-1w-HHV" firstAttribute="centerY" secondItem="yei-Px-Gd9" secondAttribute="centerY" id="NtQ-ag-krh"/>
                                     <constraint firstAttribute="trailing" secondItem="tzg-1w-HHV" secondAttribute="trailing" constant="20" id="aRB-Fq-0sH"/>
                                     <constraint firstItem="tzg-1w-HHV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Rj-Lp-zdb" secondAttribute="trailing" constant="8" symbolic="YES" id="f6V-9u-bZV"/>
+                                    <constraint firstItem="tzg-1w-HHV" firstAttribute="height" secondItem="yei-Px-Gd9" secondAttribute="height" id="wvJ-Y7-dKU"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="n0i-Uj-AqN">
+                                <rect key="frame" x="40" y="30" width="240" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n0i-Uj-AqN" secondAttribute="height" multiplier="2:1" id="BmY-aN-Ol6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="Dark Blue"/>
                         <constraints>
-                            <constraint firstItem="Dso-YS-Pbb" firstAttribute="bottom" secondItem="yei-Px-Gd9" secondAttribute="bottom" constant="20" id="O1b-f0-d8h"/>
-                            <constraint firstItem="yei-Px-Gd9" firstAttribute="top" secondItem="n0i-Uj-AqN" secondAttribute="bottom" constant="20" id="Q8L-uk-IKx"/>
+                            <constraint firstItem="yei-Px-Gd9" firstAttribute="top" secondItem="n0i-Uj-AqN" secondAttribute="bottom" constant="10" id="5Ik-tu-UVC"/>
+                            <constraint firstItem="n0i-Uj-AqN" firstAttribute="centerY" secondItem="Dso-YS-Pbb" secondAttribute="centerY" constant="-30" id="dK1-90-387"/>
                             <constraint firstItem="Dso-YS-Pbb" firstAttribute="leading" secondItem="n0i-Uj-AqN" secondAttribute="leading" constant="-40" id="eUo-PX-pnj"/>
                             <constraint firstItem="yei-Px-Gd9" firstAttribute="centerX" secondItem="Dso-YS-Pbb" secondAttribute="centerX" id="jqG-KE-CQv"/>
                             <constraint firstItem="n0i-Uj-AqN" firstAttribute="centerX" secondItem="Dso-YS-Pbb" secondAttribute="centerX" id="wPr-Dx-HxK"/>
