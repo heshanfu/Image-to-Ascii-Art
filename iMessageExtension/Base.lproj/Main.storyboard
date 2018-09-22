@@ -107,6 +107,7 @@
                                 <rect key="frame" x="40" y="30" width="240" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="n0i-Uj-AqN" secondAttribute="height" multiplier="2:1" id="BmY-aN-Ol6"/>
+                                    <constraint firstAttribute="height" constant="120" id="Hrl-pW-uPo"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -114,7 +115,6 @@
                         <constraints>
                             <constraint firstItem="yei-Px-Gd9" firstAttribute="top" secondItem="n0i-Uj-AqN" secondAttribute="bottom" constant="10" id="5Ik-tu-UVC"/>
                             <constraint firstItem="n0i-Uj-AqN" firstAttribute="centerY" secondItem="Dso-YS-Pbb" secondAttribute="centerY" constant="-30" id="dK1-90-387"/>
-                            <constraint firstItem="Dso-YS-Pbb" firstAttribute="leading" secondItem="n0i-Uj-AqN" secondAttribute="leading" constant="-40" id="eUo-PX-pnj"/>
                             <constraint firstItem="yei-Px-Gd9" firstAttribute="centerX" secondItem="Dso-YS-Pbb" secondAttribute="centerX" id="jqG-KE-CQv"/>
                             <constraint firstItem="n0i-Uj-AqN" firstAttribute="centerX" secondItem="Dso-YS-Pbb" secondAttribute="centerX" id="wPr-Dx-HxK"/>
                             <constraint firstItem="yei-Px-Gd9" firstAttribute="width" secondItem="n0i-Uj-AqN" secondAttribute="width" id="wYJ-kL-UT5"/>
